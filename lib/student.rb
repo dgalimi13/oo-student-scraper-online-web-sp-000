@@ -11,7 +11,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    new_student = Student.new
+    new_student = Student.new(students_array)
     students_array.each do |attribute,info|
       if attribute = name
         new_student.name = attribute[info]
