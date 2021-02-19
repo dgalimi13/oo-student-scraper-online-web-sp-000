@@ -14,12 +14,6 @@ class Student
    
     students_array.each do |student|
       student_new = Student.new(student)
-  binding.pry
-      if attribute = name
-        new_student.name = attribute[info]
-        elsif attribute = location
-          new_student.location = attribute[info] 
-      end
       end
   end
 
