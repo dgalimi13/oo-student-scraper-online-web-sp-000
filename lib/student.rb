@@ -15,6 +15,7 @@ class Student
       if student = :name
         self.name = :name[info]
       end
+      binding.pry
   end
 
   def add_student_attributes(attributes_hash)
