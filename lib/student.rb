@@ -11,6 +11,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
+    binding.pry
     new_student = Student.new(students_array)
     students_array.each do |attribute,info|
       if attribute = name
