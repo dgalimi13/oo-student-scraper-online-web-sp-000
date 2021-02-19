@@ -16,6 +16,7 @@ class Student
         self.name = :name[info]
       end
       binding.pry
+      end
   end
 
   def add_student_attributes(attributes_hash)
