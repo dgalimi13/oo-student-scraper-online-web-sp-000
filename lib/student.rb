@@ -12,11 +12,12 @@ class Student
 
   def self.create_from_collection(students_array)
     binding.pry
-    students_array.each do |student,info|
-      if student = :name
-        self.name = :name[info]
+    students_array.each do |attribute,info|
+      if attribute = :name
+        self.name = :attribute[info]
+        elsif attribute = :location
+          self.location = attribute[info] 
       end
-      
       end
   end
 
