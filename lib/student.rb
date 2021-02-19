@@ -11,12 +11,12 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    
+    new_student = Student.new
     students_array.each do |attribute,info|
       if attribute = name
-        self.name = attribute[info]
+        new_student.name = attribute[info]
         elsif attribute = location
-          self.location = attribute[info] 
+          new_student.location = attribute[info] 
       end
       end
   end
