@@ -13,9 +13,9 @@ class Student
   def self.create_from_collection(students_array)
     
     students_array.each do |attribute,info|
-      if attribute = :name
-        self.name = :attribute[info]
-        elsif attribute = :location
+      if attribute = name
+        self.name = attribute[info]
+        elsif attribute = location
           self.location = attribute[info] 
       end
       end
