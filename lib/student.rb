@@ -13,6 +13,7 @@ class Student
   def self.create_from_collection(students_array)
    
     students_array.each do |student|
+      student_new = Student.new(student)
   binding.pry
       if attribute = name
         new_student.name = attribute[info]
